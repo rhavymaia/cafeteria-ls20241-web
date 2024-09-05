@@ -1,0 +1,10 @@
+{
+  "name": "",
+  "description": "description",
+  "authors": "author",
+  "version": "1.0.0",
+  "main": "pathToMain",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
