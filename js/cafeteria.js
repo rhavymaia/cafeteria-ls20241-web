@@ -30,22 +30,35 @@ let itens = [
   },
 ];
 
-for (let item of itens) {
-  let card = `<div class="col">
-    <div class="card" style="width: 18rem;">
-      <img src="${item.imagemUrl}" class="card-img-top" alt="${item.alt}">
-      <div class="card-body">
-        <h5 class="card-title">${item.titulo}</h5>
-        <p class="card-text">${item.descricao}</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
-      </div>
-    </div>
-  </div>`;
-  let cardsDiv = document.getElementById('cards');
-  cardsDiv.insertAdjacentHTML('beforeend', card);
+if (localStorage.getItem('produtos') == undefined) {
+  localStorage.setItem('produtos', JSON.stringify(itens));
 }
+
+const createCards = () => {
+  let produtos = JSON.parse(localStorage.getItem('produtos'));
+  for (let produto of produtos) {
+    let card = createCardItem(produto);
+    let cardsDiv = document.getElementById('cards');
+    cardsDiv.insertAdjacentHTML('beforeend', card);
+  }
+};
+
+const createCardItem = (item) => {
+  return `<div class="col m-2">
+      <div class="card">
+        <img src="${item.imagemUrl}" class="card-img-top" alt="${item.alt}">
+        <div class="card-body">
+          <h5 class="card-title">${item.titulo}</h5>
+          <p class="card-text">${item.descricao}</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>`;
+};
 
 // while
 // for(;;)
 // itens.map(()=>{});
 // itens.forEach(()=>{});
+
+createCards();
