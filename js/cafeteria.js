@@ -1,3 +1,4 @@
+// Array contendo objetos que representam diferentes tipos de café
 let itens = [
   {
     titulo: 'Café Expresso',
@@ -30,19 +31,25 @@ let itens = [
   },
 ];
 
+// Verifica se 'produtos' não existe no localStorage e o cria com os itens definidos
 if (localStorage.getItem('produtos') == undefined) {
   localStorage.setItem('produtos', JSON.stringify(itens));
 }
 
+// Função para criar os cartões e exibi-los na interface
 const createCards = () => {
+  // Obtém os produtos armazenados no localStorage
   let produtos = JSON.parse(localStorage.getItem('produtos'));
+  
+  // Para cada produto, cria um cartão e adiciona ao DOM
   for (let produto of produtos) {
-    let card = createCardItem(produto);
-    let cardsDiv = document.getElementById('cards');
-    cardsDiv.insertAdjacentHTML('beforeend', card);
+    let card = createCardItem(produto);  // Chama a função para criar o HTML do card
+    let cardsDiv = document.getElementById('cards');  // Seleciona a div onde os cartões serão inseridos
+    cardsDiv.insertAdjacentHTML('beforeend', card);  // Insere o cartão no final da div
   }
 };
 
+// Função que cria o HTML para cada cartão de produto
 const createCardItem = (item) => {
   return `<div class="col m-2">
       <div class="card">
@@ -56,9 +63,11 @@ const createCardItem = (item) => {
     </div>`;
 };
 
+// Exemplos de loops comentados (pode-se usar enquanto ou for, ou métodos como map e forEach)
 // while
 // for(;;)
 // itens.map(()=>{});
 // itens.forEach(()=>{});
 
+// Chama a função para criar e exibir os cartões
 createCards();

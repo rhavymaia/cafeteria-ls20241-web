@@ -1,38 +1,43 @@
+/* Importa a fonte 'Rubik' do Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
-footer{
-    font-family: 'Rubik', sans-serif;
-    overflow:hidden; 
-    margin-top: 250px ;
-    background:#262626 ;
-    color: #627482  !important;
-    margin-bottom: 0 ;
-    padding-bottom:0  ;
+/* Estilos para o rodapé */
+footer {
+    font-family: 'Rubik', sans-serif; /* Define a fonte do rodapé */
+    overflow: hidden; /* Evita overflow de conteúdo */
+    margin-top: 250px; /* Espaço acima do rodapé */
+    background: #262626; /* Cor de fundo escura */
+    color: #627482 !important; /* Cor do texto */
+    margin-bottom: 0; /* Remove margem inferior */
+    padding-bottom: 0; /* Remove padding inferior */
 }
 
-small{
-    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important; 
+/* Estilo para textos pequenos */
+small {
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important; /* Tamanho de fonte responsivo */
 }
 
-.bold-text{
-    color: #989c9e !important;
+/* Estilo para textos em negrito */
+.bold-text {
+    color: #989c9e !important; /* Cor para textos destacados */
 }
 
-
-.mt-55{
-    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important; 
+/* Classe para margem superior */
+.mt-55 {
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important; /* Margem superior responsiva */
 }
 
-
-h3{
-    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important; 
-}
- 
-.social{
-    font-size: 21px !important; 
+/* Estilo para cabeçalhos h3 */
+h3 {
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important; /* Tamanho de fonte responsivo */
 }
 
-.rights{
-    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
+/* Estilo para redes sociais */
+.social {
+    font-size: 21px !important; /* Tamanho fixo para ícones ou textos sociais */
 }
 
+/* Estilo para direitos autorais */
+.rights {
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; /* Tamanho de fonte responsivo */
+}

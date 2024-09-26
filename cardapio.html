@@ -2,115 +2,109 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a responsividade da página -->
+  <title>Document</title> <!-- Título da página -->
 
-  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/footer.css"> <!-- Estilos específicos para o rodapé -->
 
   <!-- Bootstrap -->
-  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!-- Importa o CSS do Bootstrap -->
 
   <!-- Font Awesome -->
-  <link href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+  <link href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" /> <!-- Importa ícones do Font Awesome -->
+  
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" /> <!-- Importa a fonte Roboto -->
+  
   <!-- MDB -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" /> <!-- Estilos do MDB UI Kit -->
 </head>
 
 <body>
   <header>
-
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark"> <!-- Navbar com tema escuro -->
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Salento.</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="#">Salento.</a> <!-- Nome da marca na navbar -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <!-- Botão de alternância -->
+          <span class="navbar-toggler-icon"></span> <!-- Ícone do botão de alternância -->
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav"> <!-- Conteúdo da navbar -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a> <!-- Link para a página inicial -->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Cardápio</a>
+              <a class="nav-link" href="#">Cardápio</a> <!-- Link para o cardápio -->
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
   </header>
+  
   <main>
     <div class="container">
-      <!-- Button trigger modal -->
+      <!-- Botão para abrir o modal -->
       <button type="button" class="btn btn-primary m-4" data-bs-toggle="modal" data-bs-target="#produtoModal">
         +
       </button>
 
       <!-- Modal -->
-      <div class="modal fade" id="produtoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="produtoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!-- Estrutura do modal -->
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> <!-- Título do modal -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!-- Botão para fechar o modal -->
             </div>
             <div class="modal-body">
-              ...
+              ... <!-- Conteúdo do modal -->
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> <!-- Botão para fechar -->
+              <button type="button" class="btn btn-primary">Save changes</button> <!-- Botão para salvar alterações -->
             </div>
           </div>
         </div>
       </div>
     </div>
   </main>
+  
   <footer class="text-center bg-body-tertiary">
-    <!-- Grid container -->
+    <!-- Container do grid -->
     <div class="container pt-4">
-      <!-- Section: Social media -->
+      <!-- Seção: Mídias sociais -->
       <section class="mb-4">
-        <!-- Facebook -->
+        <!-- Links para as redes sociais -->
         <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
-
-        <!-- Twitter -->
         <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
-
-        <!-- Google -->
         <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
-
-        <!-- Instagram -->
         <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
-
-        <!-- Linkedin -->
         <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
-        <!-- Github -->
         <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
       </section>
-      <!-- Section: Social media -->
+      <!-- Seção: Mídias sociais -->
     </div>
-    <!-- Grid container -->
+    <!-- Container do grid -->
 
-    <!-- Copyright -->
+    <!-- Direitos autorais -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2020 Copyright:
-      <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a> <!-- Mensagem de copyright -->
     </div>
-    <!-- Copyright -->
+    <!-- Direitos autorais -->
   </footer>
 
-  <script src="./js/index.js"></script>
-  <script src="./js/datahora.js"></script>
+  <script src="./js/index.js"></script> <!-- Script para funcionalidades personalizadas -->
+  <script src="./js/datahora.js"></script> <!-- Script para manipulação de data/hora -->
+  
   <!-- Bootstrap -->
-  <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> <!-- Script do Popper.js -->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> <!-- Script do Bootstrap -->
 
   <!-- MDB -->
-  <script type="text/javascript" src="./node_modules/mdbootstrap/js/mdb.min.js"></script>
+  <script type="text/javascript" src="./node_modules/mdbootstrap/js/mdb.min.js"></script> <!-- Script do MDB -->
 </body>
 
 </html>
